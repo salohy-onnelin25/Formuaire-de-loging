@@ -82,7 +82,7 @@ function validateForm(event) {
 
   if (!usernameRegex.test(username)) {
     alert(
-      "🚨 ERROR: Username cannot contain special characters (only letters, numbers, hyphens, and underscores are allowed)."
+      "🚨 ERROR: Le nom d'utilisateur ne peut pas contenir de caractères spéciaux."
     );
     document.getElementById("username").focus();
     return false;
@@ -90,7 +90,7 @@ function validateForm(event) {
 
   if (!emailRegex.test(email)) {
     alert(
-      "📧 ERROR: Please enter a valid email address (e.g., user@example.com)."
+      "📧 ERROR: Veuillez saisir une adresse électronique valide."
     );
     document.getElementById("email").focus();
     return false;
@@ -103,20 +103,20 @@ function validateForm(event) {
 
   if (passwordScore < 3) {
     alert(
-      "🔒 ERROR: Your password must be at least 8 characters long, include a capital letter, and a special character."
+      "🔒 ERROR: Votre mot de passe doit comporter au moins 8 caractères, inclure une majuscule et un caractère spécial."
     );
     document.getElementById("password").focus();
     return false;
   }
 
   if (password !== confirmPassword) {
-    alert("⚠️ ERROR: The password and confirmation password do not match.");
+    alert("⚠️ ERROR: Le mot de passe et le mot de passe de confirmation ne correspondent pas.");
     document.getElementById("confirm-password").focus();
     return false;
   }
 
   alert(
-    "✅ SUCCESS: Registration form validated successfully! (Form would now submit to the server)"
+    "✅ SUCCESS: Formulaire d'inscription validé avec succès !"
   );
   return true;
 }

@@ -55,7 +55,7 @@ main .registration-form::after {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.897);
   z-index: 1;
 }
-main .registration-form h2 {
+main .registration-form h1 {
   color: #007bff;
   text-align: center;
   margin-top: 20px;
