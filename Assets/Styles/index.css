@@ -70,7 +70,7 @@ main .registration-form .form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: 500;
-  color: #6c757d;
+  color: black;
   font-size: 0.95em;
 }
 main .registration-form .form-group input[type=text],

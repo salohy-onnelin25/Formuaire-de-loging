@@ -44,10 +44,11 @@ main {
         .form-group {
             margin-bottom: 20px;
             label {
+
                 display: block;
                 margin-bottom: 5px;
                 font-weight: 500;
-                color: $secondary-color;
+                color: black;
                 font-size: 0.95em;
             }
             input[type="text"],
