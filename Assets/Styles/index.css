@@ -21,40 +21,6 @@ body {
   padding-top: 50px;
 }
 
-header {
-  width: 100%;
-  padding: 10px;
-  position: absolute;
-  background: #6c757d;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header h1 {
-  margin: 0;
-  padding: 0;
-  padding: 5px;
-  color: white;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  font-weight: 700;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 5px solid #007bff;
-  border-radius: 5px;
-  background: #007bff;
-}
-header .logo-box {
-  background-image: url(../Imgs/pngtree-heart-broken-man-png-image_11461134.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 main {
   width: 100%;
 }
