@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formilaire de Loging</title>
+    <link rel="stylesheet" href="./Assets/Styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SOJA-BE Groupe</h1>
+      <div class="logo-box"></div>
+    </header>
+
+    <main>
+      <form class="registration-form" onsubmit="return validateForm(event)">
+        <h2>"Inscription"</h2>
+
+        <div class="form-group">
+          <label for="username">Pseudo</label>
+          <input
+            type="text"
+            id="username"
+            required
+            placeholder="Choisissez un nom d'utilisateur unique"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="votre.email@exemple.com"
+          />
+        </div>
+
+        <div class="form-group password-container">
+          <label for="password">Mot de passe</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Min 8 characters"
+          />
+          <span
+            class="password-toggle"
+            onclick="togglePasswordVisibility('password')"
+            >👁️</span
+          >
+          <div id="password-feedback" class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <div class="form-group password-container">
+          <label for="confirm-password">Confirmez le mot de passe</label>
+          <input
+            type="password"
+            id="confirm-password"
+            required
+            placeholder="Entrez à nouveau "
+          />
+          <span
+            class="password-toggle"
+            onclick="togglePasswordVisibility('confirm-password')"
+            >👁️</span
+          >
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </main>
+    <script src="./Assets/Styles/Js/index.js"></script>
+  </body>
+</html>

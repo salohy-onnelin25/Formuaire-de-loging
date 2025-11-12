@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$border-color: #ced4da;
+$focus-shadow: rgba(0, 123, 255, 0.25);
+$header-height: 50px; 
+
+body{
+background: $secondary-color;
+display: flex;
+justify-content: center; 
+align-items: center; 
+min-height: 100vh; 
+margin: 0;
+padding-top: $header-height;
+}

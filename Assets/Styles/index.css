@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #6c757d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 123, 255, 0.25);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+}
+header .logo-box {
+  background-image: url(../Imgs/pngtree-heart-broken-man-png-image_11461134.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-animation-name: logo-slide;
+          animation-name: logo-slide;
+  -webkit-animation-duration: 700s;
+          animation-duration: 700s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes logo-slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  2% {
+    -webkit-transform: translateX(calc(150% - 80vw));
+            transform: translateX(calc(150% - 80vw));
+  }
+  50% {
+    -webkit-transform: translateX(calc(150% - 80vw));
+            transform: translateX(calc(150% - 80vw));
+  }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes logo-slide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  2% {
+    -webkit-transform: translateX(calc(150% - 80vw));
+            transform: translateX(calc(150% - 80vw));
+  }
+  50% {
+    -webkit-transform: translateX(calc(150% - 80vw));
+            transform: translateX(calc(150% - 80vw));
+  }
+  52% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+main {
+  width: 100%;
+}
+main .registration-form {
+  width: 100%;
+  max-width: 70%;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: visible;
+}
+main .registration-form::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url(../Imgs/Salohy.jpg);
+  background-position: center;
+  background-size: cover;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.897);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.897);
+  z-index: 1;
+}
+main .registration-form h2 {
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+main .registration-form .form-group {
+  margin-bottom: 20px;
+}
+main .registration-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #6c757d;
+  font-size: 0.95em;
+}
+main .registration-form .form-group input[type=text],
+main .registration-form .form-group input[type=email],
+main .registration-form .form-group input[type=password] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1em;
+  -webkit-transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: border-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+main .registration-form .form-group input[type=text]:focus,
+main .registration-form .form-group input[type=email]:focus,
+main .registration-form .form-group input[type=password]:focus {
+  border-color: #007bff;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+main .registration-form .form-group input[type=text]:required + label::after,
+main .registration-form .form-group input[type=email]:required + label::after,
+main .registration-form .form-group input[type=password]:required + label::after {
+  content: " *";
+  color: red;
+}
+main .registration-form .form-group input[type=text]::-webkit-input-placeholder, main .registration-form .form-group input[type=email]::-webkit-input-placeholder, main .registration-form .form-group input[type=password]::-webkit-input-placeholder {
+  color: rgb(161.1158798283, 167.8755364807, 173.8841201717);
+  font-style: italic;
+}
+main .registration-form .form-group input[type=text]::-moz-placeholder, main .registration-form .form-group input[type=email]::-moz-placeholder, main .registration-form .form-group input[type=password]::-moz-placeholder {
+  color: rgb(161.1158798283, 167.8755364807, 173.8841201717);
+  font-style: italic;
+}
+main .registration-form .form-group input[type=text]:-ms-input-placeholder, main .registration-form .form-group input[type=email]:-ms-input-placeholder, main .registration-form .form-group input[type=password]:-ms-input-placeholder {
+  color: rgb(161.1158798283, 167.8755364807, 173.8841201717);
+  font-style: italic;
+}
+main .registration-form .form-group input[type=text]::-ms-input-placeholder, main .registration-form .form-group input[type=email]::-ms-input-placeholder, main .registration-form .form-group input[type=password]::-ms-input-placeholder {
+  color: rgb(161.1158798283, 167.8755364807, 173.8841201717);
+  font-style: italic;
+}
+main .registration-form .form-group input[type=text]::placeholder,
+main .registration-form .form-group input[type=email]::placeholder,
+main .registration-form .form-group input[type=password]::placeholder {
+  color: rgb(161.1158798283, 167.8755364807, 173.8841201717);
+  font-style: italic;
+}
+main .registration-form .password-container {
+  position: relative;
+}
+main .registration-form .password-container .password-toggle {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1.2em;
+  opacity: 0.6;
+}
+main .registration-form .progress-bar-container {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+main .registration-form .progress-bar {
+  height: 100%;
+  width: 0;
+  -webkit-transition: width 0.3s, background-color 0.3s;
+  transition: width 0.3s, background-color 0.3s;
+  border-radius: 4px;
+}
+main .registration-form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.1s;
+  transition: background-color 0.3s, -webkit-transform 0.1s;
+  transition: background-color 0.3s, transform 0.1s;
+  transition: background-color 0.3s, transform 0.1s, -webkit-transform 0.1s;
+}
+main .registration-form .submit-btn:hover, main .registration-form .submit-btn:focus {
+  background-color: rgb(0, 98.4, 204);
+  outline: none;
+}
+main .registration-form .submit-btn:active {
+  background-color: rgb(0, 86.1, 178.5);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}/*# sourceMappingURL=index.css.map */

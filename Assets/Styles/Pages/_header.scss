@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background: $focus-shadow;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        color: black;
+        font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+        font-weight: 700;
+    }
+    .logo-box {
+        background-image: url(../Imgs/pngtree-heart-broken-man-png-image_11461134.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        width: 40px;
+        height: 40px;
+        border-radius: 5px; 
+        
+        animation-name: logo-slide;
+        animation-duration: 700s; // 10 minutes
+        animation-iteration-count: infinite; 
+        animation-timing-function: ease-in-out;
+        
+    }
+}
+
+@keyframes logo-slide {
+    0% {
+        transform: translateX(0); 
+    }
+    2% {
+        transform: translateX(calc(+150% - 80vw)); 
+    }
+    50% {
+        transform: translateX(calc(+150% - 80vw)); 
+    }
+    52% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

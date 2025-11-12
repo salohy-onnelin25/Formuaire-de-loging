@@ -1,0 +1,125 @@
+main {
+    width: 100%; 
+    
+    .registration-form {
+        width: 100%;
+        max-width: 70%; 
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.527);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        position: relative;
+        overflow: visible; 
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 80px; 
+            height: 80px;
+            border-radius: 50%;
+            
+            background-image: url(../Imgs/Salohy.jpg);
+            background-position: center;
+            background-size: cover;
+
+            top: -40px; 
+            left: 50%;
+            transform: translateX(-50%); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.897);
+            z-index: 1; 
+        }
+
+        h2 {
+            color: $primary-color;
+            text-align: center;
+            margin-top: 20px; 
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: clamp(1.2rem, 2vw, 2rem);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: $secondary-color;
+                font-size: 0.95em;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px 15px;
+                border: 1px solid $border-color;
+                border-radius: 4px;
+                font-size: 1em;
+                transition: border-color 0.3s, box-shadow 0.3s;
+                box-sizing: border-box; 
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                    box-shadow: 0 0 0 0.2rem $focus-shadow;
+                }
+                &:required + label::after {
+                    content: " *";
+                    color: red;
+                }
+                &::placeholder {
+                    color: lighten($secondary-color, 20%);
+                    font-style: italic;
+                }
+            }
+        }
+        .password-container {
+            position: relative; 
+            .password-toggle {
+                position: absolute;
+                top: 35px; 
+                right: 10px;
+                cursor: pointer;
+                user-select: none;
+                font-size: 1.2em;
+                opacity: 0.6;
+            }
+        }
+        .progress-bar-container {
+            height: 8px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            transition: width 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            &:hover,
+            &:focus {
+                background-color: darken($primary-color, 10%);
+                outline: none;
+            }
+            &:active {
+                background-color: darken($primary-color, 15%);
+                transform: translateY(1px); 
+            }
+        }
+    }
+}
